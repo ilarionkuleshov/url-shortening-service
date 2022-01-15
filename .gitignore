@@ -1,0 +1,4 @@
+venv/
+shorteningservice/shorteningservice/__pycache__/
+shorteningservice/shortener/__pycache__/
+shorteningservice/shortener/api/__pycache__/

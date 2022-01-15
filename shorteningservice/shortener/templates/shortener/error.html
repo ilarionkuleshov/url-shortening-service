@@ -1,0 +1,21 @@
+{% extends 'shortener/base.html' %}
+
+{% block title %}Ошибка{% endblock %}
+
+{% block content %}
+	{% if is_form %}
+		{% include 'shortener/form.html' %}
+	{% endif %}
+
+	<div class="px-4 py-4">
+		<div class="card border-danger" id="card-2">
+			<div class="card-header">
+				<h5 class="text-center">Ошибка!</h5>
+			</div>
+
+			<div class="card-body">
+				<h6 class="text-center">{{ error_msg }}</h6>
+			</div>
+		</div>
+	</div>
+{% endblock %}

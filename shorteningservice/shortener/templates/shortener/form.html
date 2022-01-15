@@ -1,0 +1,25 @@
+<div class="px-4 py-4">
+	<div class="card border-primary" id="card-1">
+		<div class="card-header">
+			<h1 class="text-center">
+				<a href="/" class="link-dark" style="text-decoration: none;">Сервис для сокращения гиперссылок</a>
+			</h1>
+		</div>
+
+		<div class="card-body">
+			<form action="{% url 'shorten_url' %}" method="POST">
+				{% csrf_token %}
+
+				<div class="row">
+					<div class="col">
+						<input type="text" required class="form-control" placeholder="Ваша ссылка..." name="initial_url">
+					</div>
+
+					<div class="col-auto">
+						<button type="submit" class="btn btn-primary">Сократить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

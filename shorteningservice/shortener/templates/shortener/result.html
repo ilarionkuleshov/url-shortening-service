@@ -1,0 +1,24 @@
+{% extends 'shortener/base.html' %}
+
+{% block title %}Результат{% endblock %}
+
+{% block content %}
+	{% include 'shortener/form.html' %}
+
+	<h3 class="text-center fw-bold">Результат</h3>
+	<h5 class="text-center">Сокращенная ссылка:</h5>
+
+	<div class="px-4">
+		<div class="card border-primary" id="card-2">
+			<div class="card-body">
+				<h5 class="text-center">
+					<a href="{{ short_url }}" class="link-dark" target="_blank">{{ short_url }}</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+
+	<h6 class="text-center fst-italic py-2">
+		Исходная ссылка: <a href="{{ initial_url }}" class="link-dark" target="_blank">{{ initial_url }}</a>
+	</h6>
+{% endblock %}
