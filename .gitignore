@@ -2,3 +2,4 @@ venv/
 shorteningservice/shorteningservice/__pycache__/
 shorteningservice/shortener/__pycache__/
 shorteningservice/shortener/api/__pycache__/
+shorteningservice/shortener/migrations/__pycache__/
